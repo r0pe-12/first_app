@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future<void> _incrementCounter(int i) async {
     final SharedPreferences prefs = await _prefs;
-    late int counter = (prefs.getInt('counter') ?? 0) + 1;
+    late int counter = (prefs.getInt('counter') ?? 0) + i;
     setState(() {
       // This call to setState tells the Flutter framework that something has
       // changed in this State, which causes it to rerun the build method below
