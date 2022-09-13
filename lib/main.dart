@@ -132,6 +132,15 @@ class _MyHomePageState extends State<MyHomePage> {
               icon: const Icon(Icons.add),
               label: Text('10'),
             ),
+            Padding(padding: EdgeInsets.all(8.0)),
+
+            FloatingActionButton.extended(
+              backgroundColor: Colors.pink[900],
+              onPressed: () => _incrementCounter(-1),
+              tooltip: 'Increment',
+              icon: const Icon(Icons.remove),
+              label: Text('1'),
+            ),
 
             Padding(padding: EdgeInsets.all(8.0)),
             FloatingActionButton(
